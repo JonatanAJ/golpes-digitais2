@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#07111f">
+    <title>Como Evitar Golpes Digitais e Fake News | EJA</title>
+    <meta name="description"
+          content="Material educativo sobre fake news, golpes digitais, WhatsApp, Pix e segurança na internet, com simulação prática e quiz.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <nav>
+        <div class="container navin">
+
+            <div class="brand">
+                SEGURANÇA <span>DIGITAL</span>
+            </div>
+
+            <button
+                id="menuToggle"
+                class="menu-toggle"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+                aria-controls="navLinks"
+            >
+                ☰
+            </button>
+
+            <div class="links" id="navLinks">
+                <a href="#fakenews">Fake News</a>
+                <a href="#golpes">Golpes</a>
+                <a href="#prevencao">Prevenção</a>
+                <a href="#whatsapp">WhatsApp</a>
+                <a href="#pix">Pix</a>
+                <a href="#verificador">Verificador IA</a>
+                <a href="#quiz">Quiz</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <main id="conteudo">
+
+        <header class="container hero">
+
+            <div>
+                <div class="eyebrow">PROJETO DE EXTENSÃO • EJA</div>
+
+                <h1>
+                    Como não cair em
+                    <br>
+                    <span>golpes e fake news</span>
+                </h1>
+
+                <p>
+                    Golpistas e notícias falsas usam os mesmos truques: pressa,
+                    emoção e a esperança de que você não vai parar para checar.
+                    Aqui você aprende a reconhecer os sinais, testa o que aprendeu
+                    numa simulação real de WhatsApp e vê se está preparado no quiz final.
+                </p>
+
+                <div class="buttons">
+                    <a class="btn primary" href="#fakenews">Começar a aprender</a>
+                    <a class="btn" href="#quiz">Testar meus conhecimentos</a>
+                </div>
+            </div>
+
+            <div class="hero-img">
+                <img src="imagens/imagem2.png" alt="Estudantes aprendendo em grupo sobre segurança digital">
+            </div>
+
+        </header>
+
+        <div class="container reveal">
+            <div class="stats-bar">
+                <div class="stat">
+                    <span class="stat-num" data-alvo="81" data-sufixo="%">0%</span>
+                    <span class="stat-label">dos adultos brasileiros tiveram contato com algum golpe digital em 2026</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num" data-alvo="64" data-sufixo="%">0%</span>
+                    <span class="stat-label">das vítimas de golpe foram contatadas pelo WhatsApp — o canal mais usado por golpistas</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num" data-alvo="41" data-sufixo="%">0%</span>
+                    <span class="stat-label">dos brasileiros não confiam na própria capacidade de reconhecer um golpe</span>
+                </div>
+            </div>
+            <p class="stats-fonte">
+                Fonte: <a href="https://www.cnnbrasil.com.br/nacional/brasil/golpes-digitais-brasil-teve-34-bilhoes-de-tentativas-em-2025/" target="_blank" rel="noopener noreferrer">GASA Brasil — relatório "O Estado dos Golpes no Brasil 2026"</a>
+            </p>
+        </div>
+
+        <!-- =========================
+             FAKE NEWS
+        ========================== -->
+
+        <section id="fakenews">
+            <div class="container">
+
+                <div class="section-title reveal">
+                    <h2>O que é fake news e como identificar</h2>
+                    <p>
+                        Fake news são informações falsas ou distorcidas, criadas
+                        para enganar, gerar cliques ou manipular opiniões.
+                        Reconhecer os sinais é o primeiro passo para não espalhar.
+                    </p>
+                </div>
+
+                <div class="signs-list">
+
+                    <div class="sign">
+                        <div class="icon">🚩</div>
+                        <div>
+                            <h4>Título sensacionalista</h4>
+                            <p>Frases exageradas, em caixa alta ou com muitas exclamações, feitas para chocar antes de informar.</p>
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <div class="icon">❓</div>
+                        <div>
+                            <h4>Sem fonte ou autor</h4>
+                            <p>Não há veículo de imprensa, autor identificado ou link para a informação original.</p>
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <div class="icon">📅</div>
+                        <div>
+                            <h4>Sem data ou desatualizada</h4>
+                            <p>Notícias antigas são recirculadas como se fossem atuais, fora do contexto original.</p>
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <div class="icon">🖼️</div>
+                        <div>
+                            <h4>Imagem fora de contexto</h4>
+                            <p>Fotos reais, mas de outro evento, país ou época, usadas para ilustrar uma história falsa.</p>
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <div class="icon">😡</div>
+                        <div>
+                            <h4>Apelo emocional forte</h4>
+                            <p>Textos que tentam gerar raiva, medo ou indignação em vez de simplesmente informar.</p>
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <div class="icon">📢</div>
+                        <div>
+                            <h4>Pede compartilhamento urgente</h4>
+                            <p>Frases como "compartilhe antes que apaguem" pressionam a espalhar sem checar.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="section-title reveal" style="margin-top:56px;">
+                    <h2>Como checar antes de acreditar</h2>
+                    <p>Um passo a passo simples para verificar qualquer informação duvidosa.</p>
+                </div>
+
+                <div class="steps-verify">
+
+                    <div class="step-verify">
+                        <h3>Busque a fonte</h3>
+                        <p>Veja se veículos de imprensa conhecidos também noticiaram o fato.</p>
+                    </div>
+
+                    <div class="step-verify">
+                        <h3>Confira a data</h3>
+                        <p>Pesquise se a notícia é recente ou uma reciclagem de fato antigo.</p>
+                    </div>
+
+                    <div class="step-verify">
+                        <h3>Use agências de checagem</h3>
+                        <p>Sites como Aos Fatos, Lupa e Fato ou Fake analisam boatos que circulam nas redes.</p>
+                    </div>
+
+                    <div class="step-verify">
+                        <h3>Pesquise a imagem</h3>
+                        <p>Uma busca reversa de imagem mostra se a foto já apareceu em outro contexto.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- =========================
+             GOLPES
+        ========================== -->
+
+        <section id="golpes">
+            <div class="container">
+
+                <div class="section-title reveal">
+                    <h2>Principais golpes digitais</h2>
+                    <p>
+                        A história muda, mas o truque se repete: alguém cria uma
+                        situação urgente para você agir antes de pensar. Clique em
+                        cada card para ver um exemplo real de mensagem.
+                    </p>
+                </div>
+
+                <div class="grid">
+
+                    <div class="card">
+                        <div class="num">FALSO FAMILIAR</div>
+                        <h3>Pedido urgente de dinheiro</h3>
+                        <p>Alguém se passa por uma pessoa conhecida e pede uma transferência com pressa.</p>
+                        <button class="card-toggle" aria-expanded="false" aria-controls="ex-familiar">
+                            <span class="seta">▾</span> <span class="texto-toggle">Ver exemplo real</span>
+                        </button>
+                        <div class="card-exemplo" id="ex-familiar">
+                            <p class="card-exemplo-texto"><b>Mensagem típica:</b> "Oi mãe, quebrei meu celular e estou usando o de um amigo. Preciso que você me faça um Pix urgente, depois te explico."</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="num">FALSO BANCO</div>
+                        <h3>Senha ou código</h3>
+                        <p>O contato pede senha, código ou outras informações de acesso.</p>
+                        <button class="card-toggle" aria-expanded="false" aria-controls="ex-banco">
+                            <span class="seta">▾</span> <span class="texto-toggle">Ver exemplo real</span>
+                        </button>
+                        <div class="card-exemplo" id="ex-banco">
+                            <p class="card-exemplo-texto"><b>Mensagem típica:</b> "Detectamos uma movimentação suspeita. Informe o código de 6 dígitos enviado por SMS para cancelar a transação."</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="num">PHISHING</div>
+                        <h3>Link suspeito</h3>
+                        <p>Um link imita um site confiável para induzir a vítima a agir.</p>
+                        <button class="card-toggle" aria-expanded="false" aria-controls="ex-phishing">
+                            <span class="seta">▾</span> <span class="texto-toggle">Ver exemplo real</span>
+                        </button>
+                        <div class="card-exemplo" id="ex-phishing">
+                            <p class="card-exemplo-texto"><b>Sinal de alerta:</b> um link como "meubanco-seguro.xyz" ou "correios-rastreio.info" imita o nome de uma empresa real, mas o endereço (depois do primeiro "/") é diferente do site oficial.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="num">FALSA PROMOÇÃO</div>
+                        <h3>Oferta boa demais</h3>
+                        <p>Uma oferta muito vantajosa é usada para despertar curiosidade e pressa.</p>
+                        <button class="card-toggle" aria-expanded="false" aria-controls="ex-promocao">
+                            <span class="seta">▾</span> <span class="texto-toggle">Ver exemplo real</span>
+                        </button>
+                        <div class="card-exemplo" id="ex-promocao">
+                            <p class="card-exemplo-texto"><b>Mensagem típica:</b> "Parabéns! Você ganhou um smartphone. Pague apenas a taxa de envio de R$ 19,90 clicando no link."</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="num">FALSA COBRANÇA</div>
+                        <h3>Boleto ou taxa inesperada</h3>
+                        <p>Uma cobrança não reconhecida tenta levar ao pagamento imediato.</p>
+                        <button class="card-toggle" aria-expanded="false" aria-controls="ex-cobranca">
+                            <span class="seta">▾</span> <span class="texto-toggle">Ver exemplo real</span>
+                        </button>
+                        <div class="card-exemplo" id="ex-cobranca">
+                            <p class="card-exemplo-texto"><b>Mensagem típica:</b> "Consta um débito em aberto referente à sua fatura. Regularize hoje para evitar negativação. Pague pelo link abaixo."</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="num">GOLPE DO PIX</div>
+                        <h3>Transferência sob pressão</h3>
+                        <p>A vítima é pressionada a realizar uma transferência rapidamente.</p>
+                        <button class="card-toggle" aria-expanded="false" aria-controls="ex-pix">
+                            <span class="seta">▾</span> <span class="texto-toggle">Ver exemplo real</span>
+                        </button>
+                        <div class="card-exemplo" id="ex-pix">
+                            <p class="card-exemplo-texto"><b>Mensagem típica:</b> "Sua entrega está retida por falta de pagamento da taxa alfandegária. Faça o Pix agora ou o produto será devolvido."</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================
+             PREVENÇÃO
+        ========================== -->
+
+        <section id="prevencao">
+            <div class="container split">
+
+                <div class="photo">
+                    <img src="imagens/Imagem02.png" alt="Pessoa usando computador com atenção">
+                </div>
+
+                <div>
+                    <div class="section-title reveal">
+                        <h2>Regra principal: faça uma pausa</h2>
+                        <p>
+                            Antes de agir, pare. A engenharia social tenta manipular
+                            emoções como urgência, medo, confiança e curiosidade.
+                        </p>
+                    </div>
+
+                    <div class="checks">
+                        <div class="check"><b>PARE</b> — Não clique, não responda e não pague imediatamente.</div>
+                        <div class="check"><b>PENSE</b> — Analise remetente, pedido, link e contexto.</div>
+                        <div class="check"><b>CONFIRME</b> — Use o canal oficial da pessoa ou instituição.</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- =========================
+             WHATSAPP
+        ========================== -->
+
+        <section id="whatsapp">
+            <div class="container">
+
+                <div class="section-title reveal">
+                    <h2>Segurança no WhatsApp</h2>
+                    <p>Sua conta precisa de duas barreiras. Pequenas configurações aumentam a proteção.</p>
+                </div>
+
+                <div class="grid">
+                    <div class="card">
+                        <div class="num">01</div>
+                        <h3>Verificação em duas etapas</h3>
+                        <p>Ative a verificação em duas etapas.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="num">02</div>
+                        <h3>Nunca compartilhe códigos</h3>
+                        <p>Não compartilhe códigos recebidos por SMS.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="num">03</div>
+                        <h3>Desconfie do inesperado</h3>
+                        <p>Tenha cuidado com mensagens inesperadas.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="num">04</div>
+                        <h3>Bloqueie</h3>
+                        <p>Bloqueie contatos suspeitos.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="num">05</div>
+                        <h3>Denuncie</h3>
+                        <p>Use a função de denúncia quando necessário.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="num">06</div>
+                        <h3>Privacidade</h3>
+                        <p>Revise suas configurações de privacidade.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- =========================
+             SIMULAÇÃO DE GOLPE NO WHATSAPP
+        ========================== -->
+
+        <section id="simulacao-whatsapp">
+            <div class="container">
+
+                <div class="section-title reveal">
+                    <h2>Simulação: você reconhece o golpe?</h2>
+                    <p>Observe a conversa abaixo. Clique no link suspeito para descobrir os sinais de perigo.</p>
+                </div>
+
+                <div class="simulacao-area">
+
+                    <div class="celular-simulacao">
+                        <div class="celular-topo"></div>
+
+                        <div class="whatsapp-tela">
+
+                            <div class="whatsapp-cabecalho">
+                                <div class="whatsapp-voltar" aria-hidden="true">‹</div>
+                                <div class="whatsapp-foto" aria-hidden="true">👤</div>
+                                <div class="whatsapp-contato">
+                                    <strong>Promoções Online</strong>
+                                    <span>online</span>
+                                </div>
+                                <div class="whatsapp-icones" aria-hidden="true">📹 ⋮</div>
+                            </div>
+
+                            <div class="whatsapp-conversa">
+                                <div class="whatsapp-data">HOJE</div>
+
+                                <div class="msg recebida">
+                                    🎉 <strong>Parabéns!</strong><br><br>
+                                    Você foi selecionado para receber um prêmio exclusivo.<br><br>
+                                    Para confirmar o recebimento, clique no link abaixo:
+                                    <button class="link-suspeito" id="linkSuspeito" type="button">
+                                        🔗 promocao-premio.xyz/resgate
+                                    </button>
+                                    <div class="msg-hora">21:47</div>
+                                </div>
+
+                                <div class="msg enviada">
+                                    Isso é verdade?
+                                    <div class="msg-hora">21:48 ✓✓</div>
+                                </div>
+
+                                <div class="msg recebida">
+                                    Sim! Mas você precisa agir agora.<br><br>
+                                    ⏰ O prêmio será cancelado em apenas 10 minutos!
+                                    <div class="msg-hora">21:48</div>
+                                </div>
+
+                                <div class="msg enviada">
+                                    Vou verificar primeiro.
+                                    <div class="msg-hora">21:49 ✓✓</div>
+                                </div>
+                            </div>
+
+                            <div class="whatsapp-barra">
+                                <div class="whatsapp-campo">Digite uma mensagem</div>
+                                <div class="whatsapp-microfone" aria-hidden="true">🎤</div>
+                            </div>
+
+                            <div class="alerta-golpe" id="alertaGolpe" role="alertdialog" aria-labelledby="alertaTitulo">
+                                <div class="alerta-icone" aria-hidden="true">⚠️</div>
+                                <h3 id="alertaTitulo">Cuidado: possível golpe!</h3>
+                                <p>Esta mensagem apresenta vários sinais comuns de fraude.</p>
+
+                                <div class="sinais-golpe">
+                                    <div>❌ Prêmio inesperado</div>
+                                    <div>❌ Pressão para agir rápido</div>
+                                    <div>❌ Link com endereço suspeito</div>
+                                    <div>❌ Possível pedido de dados</div>
+                                </div>
+
+                                <button class="btn primary" id="fecharAlerta" type="button">Entendi</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="simulacao-explicacao">
+
+                        <div class="card">
+                            <div class="num">ANALISE A MENSAGEM</div>
+                            <h3>Quais são os sinais do golpe?</h3>
+                            <p>Golpistas costumam usar mensagens inesperadas, prêmios falsos e senso de urgência para fazer a vítima agir sem pensar.</p>
+                        </div>
+
+                        <div class="check"><b>1. PRÊMIO INESPERADO</b><br>Você participou de alguma promoção?</div>
+                        <div class="check"><b>2. PRESSÃO</b><br>Frases como "última chance" e "clique agora" são sinais de alerta.</div>
+                        <div class="check"><b>3. LINK ESTRANHO</b><br>Antes de clicar, observe cuidadosamente o endereço do site.</div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================
+             PIX
+        ========================== -->
+
+        <section id="pix">
+            <div class="container split">
+
+                <div>
+                    <div class="section-title reveal">
+                        <h2>Cuidados com o Pix</h2>
+                        <p>
+                            Confira antes de transferir. Se houver fraude, procure seu
+                            banco rapidamente e pergunte sobre o Mecanismo Especial
+                            de Devolução (MED).
+                        </p>
+                    </div>
+
+                    <div class="checks">
+                        <div class="check">✓ <b>Nome</b> do destinatário</div>
+                        <div class="check">✓ <b>Valor</b> da transferência</div>
+                        <div class="check">✓ <b>Instituição financeira</b></div>
+                        <div class="check">✓ <b>Motivo</b> do pagamento</div>
+                        <div class="check">✓ <b>Pedido confirmado</b> com a pessoa</div>
+                    </div>
+                </div>
+
+                <div class="photo">
+                    <img src="imagens/PIX01.png" alt="Celular com aplicativo de pagamento aberto">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- =========================
+             VERIFICADOR COM IA
+        ========================== -->
+
+        <section id="verificador">
+            <div class="container">
+
+                <div class="section-title reveal">
+                    <h2>Verificador com IA: analise antes de acreditar</h2>
+                    <p>
+                        Cole um texto, um link ou envie um print. A IA aponta possíveis
+                        sinais de golpe ou desinformação e sugere como confirmar por
+                        conta própria — ela é um apoio para o método
+                        <strong>PARE, PENSE e CONFIRME</strong>, não um veredito final.
+                    </p>
+                </div>
+
+                <div class="verificador-box reveal">
+
+                    <div class="verificador-abas" role="tablist" aria-label="Tipo de conteúdo a analisar">
+                        <button type="button" class="aba-verificador ativa" data-aba="texto" role="tab" aria-selected="true">📝 Texto</button>
+                        <button type="button" class="aba-verificador" data-aba="link" role="tab" aria-selected="false">🔗 Link</button>
+                        <button type="button" class="aba-verificador" data-aba="imagem" role="tab" aria-selected="false">🖼️ Print / Imagem</button>
+                    </div>
+
+                    <form id="formVerificador">
+
+                        <div class="painel-verificador ativo" data-painel="texto">
+                            <label for="verifTexto">Cole a mensagem ou notícia</label>
+                            <textarea id="verifTexto" name="verifTexto" rows="6"
+                                placeholder="Ex.: URGENTE! Você ganhou um prêmio, clique aqui antes que expire..."></textarea>
+                        </div>
+
+                        <div class="painel-verificador" data-painel="link">
+                            <label for="verifLink">Cole o link da notícia ou mensagem</label>
+                            <input type="url" id="verifLink" name="verifLink" placeholder="https://exemplo.com/noticia">
+                        </div>
+
+                        <div class="painel-verificador" data-painel="imagem">
+                            <label for="verifImagem">Envie um print ou foto (JPG/PNG, até 4MB)</label>
+                            <input type="file" id="verifImagem" name="verifImagem" accept="image/png, image/jpeg, image/webp">
+                            <div class="verif-preview-imagem" id="verifPreviewImagem" hidden>
+                                <img id="verifPreviewImg" alt="Pré-visualização da imagem enviada">
+                                <button type="button" id="verifRemoverImagem" class="btn">Remover imagem</button>
+                            </div>
+                        </div>
+
+                        <p class="verif-obs">
+                            Você pode combinar mais de uma aba (ex.: colar o texto <em>e</em> enviar o print).
+                        </p>
+
+                        <button class="btn primary" id="btnVerificar" type="submit">Analisar com IA</button>
+
+                        <div id="verifCarregando" class="verif-carregando" hidden>
+                            <span class="verif-spinner" aria-hidden="true"></span>
+                            Analisando sinais de risco...
+                        </div>
+
+                        <div id="verifErro" class="verif-erro" role="alert" hidden></div>
+
+                    </form>
+
+                    <div id="verifResultado" class="verif-resultado" aria-live="polite" hidden></div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- =========================
+             AVISO GERAL
+        ========================== -->
+
+        <section>
+            <div class="container">
+                <div class="warning">
+                    <div class="big" aria-hidden="true">🛡️</div>
+                    <div>
+                        <h2>Na dúvida, não clique!</h2>
+                        <p><strong>PARE — PENSE — CONFIRME.</strong> Conhecimento também é uma forma de proteção.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================
+             QUIZ
+        ========================== -->
+
+        <section id="quiz">
+            <div class="container">
+
+                <div class="section-title reveal">
+                    <h2>Quiz: é golpe, fake news ou não é?</h2>
+                    <p>Responda as 5 perguntas. As explicações aparecem só no final, com o que você acertou e errou.</p>
+                </div>
+
+                <div class="quiz">
+
+                    <p class="quiz-progress" id="quizProgressoTexto">0 de 5 perguntas respondidas</p>
+                    <div class="quiz-progress-bar">
+                        <div class="quiz-progress-fill" id="quizProgressoBarra"></div>
+                    </div>
+
+                    <div class="question">
+                        <h3>1. Você recebe: "URGENTE! Sua conta bancária será bloqueada. Clique aqui para regularizar imediatamente." O que fazer?</h3>
+
+                        <label class="option">
+                            <input type="radio" name="q1" value="0">
+                            Clicar imediatamente.
+                        </label>
+
+                        <label class="option">
+                            <input type="radio" name="q1" value="1">
+                            Parar, analisar e confirmar pelo canal oficial.
+                        </label>
+                    </div>
+
+                    <div class="question">
+                        <h3>2. Uma pessoa pede seu código recebido por SMS. Você deve enviar?</h3>
+
+                        <label class="option">
+                            <input type="radio" name="q2" value="0">
+                            Sim, se ela disser que é do suporte.
+                        </label>
+
+                        <label class="option">
+                            <input type="radio" name="q2" value="1">
+                            Não. O código não deve ser compartilhado.
+                        </label>
+                    </div>
+
+                    <div class="question">
+                        <h3>3. Antes de fazer um Pix, qual atitude é mais segura?</h3>
+
+                        <label class="option">
+                            <input type="radio" name="q3" value="1">
+                            Conferir nome, valor, instituição, motivo e confirmar o pedido.
+                        </label>
+
+                        <label class="option">
+                            <input type="radio" name="q3" value="0">
+                            Fazer logo para não perder a oportunidade.
+                        </label>
+                    </div>
+
+                    <div class="question">
+                        <h3>4. Você vê uma notícia chocante em um grupo de WhatsApp, sem fonte, sem data e que nenhum jornal noticiou. O que isso indica?</h3>
+
+                        <label class="option">
+                            <input type="radio" name="q4" value="1">
+                            É provavelmente fake news e merece checagem antes de compartilhar.
+                        </label>
+
+                        <label class="option">
+                            <input type="radio" name="q4" value="0">
+                            Se está circulando bastante, deve ser verdade.
+                        </label>
+                    </div>
+
+                    <div class="question">
+                        <h3>5. Qual característica é um sinal comum de fake news?</h3>
+
+                        <label class="option">
+                            <input type="radio" name="q5" value="1">
+                            Título em caixa alta, cheio de exclamações, pedindo para compartilhar "urgente".
+                        </label>
+
+                        <label class="option">
+                            <input type="radio" name="q5" value="0">
+                            Texto assinado por um repórter, com data e fonte citada.
+                        </label>
+                    </div>
+
+                    <button class="btn primary" id="btnCorrigir" type="button">Ver resultado</button>
+
+                    <p id="result" class="result" role="status"></p>
+
+                    <div id="review" class="review" aria-live="polite"></div>
+
+                    <button class="btn" id="btnTentarNovamente" type="button" style="display:none; margin-top:18px;">
+                        🔄 Tentar novamente
+                    </button>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <strong>Projeto de Extensão • Sistemas de Informação</strong>
+            <div class="small">EJA • Juazeiro do Norte – CE • Material educativo</div>
+        </div>
+    </footer>
+
+    <!-- =========================
+         CHATBOT FLUTUANTE
+    ========================== -->
+
+    <div id="chatWidget" class="chat-widget">
+
+        <button
+            type="button"
+            id="chatToggle"
+            class="chat-bolha"
+            aria-expanded="false"
+            aria-controls="chatPainel"
+            aria-label="Abrir assistente virtual sobre segurança digital"
+        >
+            <span class="chat-bolha-icone" aria-hidden="true">💬</span>
+        </button>
+
+        <div id="chatPainel" class="chat-painel" role="dialog" aria-labelledby="chatTitulo" hidden>
+
+            <div class="chat-cabecalho">
+                <div>
+                    <strong id="chatTitulo">Assistente de Segurança Digital</strong>
+                    <span class="chat-subtitulo">Tire dúvidas sobre golpes e fake news</span>
+                </div>
+                <button type="button" id="chatFechar" class="chat-fechar" aria-label="Fechar assistente">✕</button>
+            </div>
+
+            <div id="chatMensagens" class="chat-mensagens" aria-live="polite"></div>
+
+            <form id="chatForm" class="chat-form">
+                <label for="chatInput" class="sr-only">Digite sua pergunta</label>
+                <textarea
+                    id="chatInput"
+                    name="chatInput"
+                    rows="1"
+                    placeholder="Pergunte algo, ex.: recebi um Pix estranho, o que faço?"
+                    maxlength="1200"
+                ></textarea>
+                <button type="submit" class="chat-enviar" id="chatEnviar" aria-label="Enviar pergunta">➤</button>
+            </form>
+
+            <p class="chat-aviso">Respostas geradas por IA podem conter erros — não substituem checagem oficial.</p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
