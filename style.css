@@ -1216,6 +1216,18 @@ footer {
 }
 
 /* =========================
+   GARANTIA GLOBAL: [hidden] SEMPRE ESCONDE
+========================== */
+
+/* Alguns componentes definem display:flex/grid no próprio seletor
+   (ex.: .chat-painel, .verif-carregando), o que "vence" o display:none
+   padrão do atributo hidden. Esta regra evita esse bug em qualquer
+   elemento, atual ou futuro. */
+[hidden] {
+    display: none !important;
+}
+
+/* =========================
    ACESSIBILIDADE: TEXTO SÓ PARA LEITOR DE TELA
 ========================== */
 
@@ -1274,6 +1286,12 @@ footer {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+}
+
+/* Sem isso, o painel ignorava o atributo "hidden" e ficava sempre visível
+   (o display:flex acima "vencia" o display:none padrão do [hidden]). */
+.chat-painel[hidden] {
+    display: none;
 }
 
 .chat-cabecalho {
